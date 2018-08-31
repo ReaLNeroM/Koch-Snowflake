@@ -15,7 +15,7 @@ def do_recursively(step, endStep):
 	do_recursively(step + 1, endStep)
 
 
-def do_iteratively(endStep, length):
+def koch(length, order):
 	l = [0] #l is an update list
 	size = [length]
 	while len(l) > 0:
@@ -55,7 +55,7 @@ def do_iteratively(endStep, length):
 endStep = input("To what depth?")
 length = 100.0
 # do_recursively(0, endStep)
-do_iteratively(endStep, length)
+koch(length, endStep)
 
 while True:
 	pass
